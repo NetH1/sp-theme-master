@@ -1,0 +1,73 @@
+/*
+Theme Name: SP Theme
+Theme URI: https://cms3.ru/wordpress-pustaya-tema/
+Author: Alex Kuimov
+Author URI: https://cms3.ru
+Description: The blank wordpress theme
+Version: 1.0.0
+Text Domain: sp-theme
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*WordPress Core*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .clip_path{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 81%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 81%);
+    position: relative;
+    }
+    .clip_path::before{
+        content: "";
+      display: block;
+      height: 20%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .wrapper{
+        position: relative;
+      background-image: url("<?php bloginfo('template_url'); ?>/imgs/line.png"); /* устанавливаем фоновое изображение с линией */
+      background-position: center; /* выравниваем по центру */
+      background-repeat: repeat-x; /* повторяем изображение только по вертикали */
+      background-size: 1px auto; /* ширина линии равна 1 пикселю */
+    }
+    .clip_path2{
+        -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .border_menu{
+        border: 1px solid #61728333;
+        padding: 16px 46px;
+        border-radius: 6px;
+    }
+    .border_menu_burger{
+        border: 1px solid #35B8BE26;
+        border-radius: 6px;
+    }
+    input:focus{
+        outline: none;
+    }
+    input{
+        border: 1px solid #DDDDDD;
+        background: #FAFAFA;
+        border-radius: 6px;
+        width: fit-content;
+    }
+    .card2{
+        border: 1px solid #35B8BE26;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 40px 26px;
+    }
+    .footer_b{
+        border: 1px solid #7E828F4D;
+        border-radius: 100px;
+        padding: 11px;
+    }
